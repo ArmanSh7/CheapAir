@@ -7,6 +7,7 @@ from email_notification_manager import Email
 data_manager = DataManager()
 sheet_data = data_manager.get_destination_data()
 ORIGIN_CITY_IATA = "SAN"
+flight_search = FlightSearch()
 
 if sheet_data[0]["iataCode"] == "":
     from flight_search import FlightSearch
